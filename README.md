@@ -18,7 +18,7 @@ This analysis was fairly straightforward
 ### Challenges and Difficulties Encountered
   For the analysis of Outcomes Based on Launch Date, the primary challenge was in regards to formatting. It was important that the launch date was formatted properly so it displayed properly in the pivot table and corresponding graph. This analysis was focused on the launch month, so it was important, and challenging, to set the pivot table up with that in mind. It was also important to filter out results that were not associated with the Parent Category of "Theater" and those that were currently live.
 
-  For the 
+  For the analysis of Out
 
 ## Results
 
@@ -34,4 +34,4 @@ This analysis was fairly straightforward
 
 - What are some other possible tables and/or graphs that we could create?
 
-     It would be interesting to bring in the pledged data to better understand the outcomes quantitatively and not just whether the play was successful. 
+     To expand the analysis of Outcome Based on Goals, It would be interesting to bring in the pledged data to better understand the outcomes quantitatively and not just whether the play was successful. You could update the table to have average % pledged (compared to goal) and have that on the y axis with a separate line for failed and successful. It would also be valuable to combine these two analysis and visualize Pledged or Goal amount vs Launch date.   
