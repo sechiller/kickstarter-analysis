@@ -6,15 +6,19 @@ module 1
 ## Overview of Project
 
 ### Purpose
-The purpose of this analysis is to understand how different campaigns fared in relation to their launch dates and their funding goals. Visualizations were used to summarize campaign outcomes based on their launch dates and funding goals.
+  For this project, our client has just come off of a succesful run of the play *Fever* where fundraising goals were met quickly. They want to understand how their play performed compared to others, and identify any indicators of success for future endeavors. The purpose of this analysis is to understand how different campaigns fared in relation to their launch dates and their funding goals. Visualizations were used to further understand and summarize campaign outcomes based on their launch dates and funding goals.
 
 ## Analysis and Challenges
 
 ### Analysis of Outcomes Based on Launch Date
+This analysis was fairly straightforward
 
 ### Analysis of Outcomes Based on Goals
 
 ### Challenges and Difficulties Encountered
+  For the analysis of Outcomes Based on Launch Date, the primary challenge was in regards to formatting. It was important that the launch date was formatted properly so it displayed properly in the pivot table and corresponding graph. This analysis was focused on the launch month, so it was important, and challenging, to set the pivot table up with that in mind. It was also important to filter out results that were not associated with the Parent Category of "Theater" and those that were currently live.
+
+  For the 
 
 ## Results
 
