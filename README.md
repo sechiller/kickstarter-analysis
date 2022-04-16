@@ -4,10 +4,9 @@ module 1
 # Kickstarting with Excel
 
 ## Overview of Project
-The purpose of this analysis is to understand how different campaigns fared in relation to their launch dates and their funding goals. Visualizations were used to summarize campaign outcomes based on their launch dates and funding goals.
-
 
 ### Purpose
+The purpose of this analysis is to understand how different campaigns fared in relation to their launch dates and their funding goals. Visualizations were used to summarize campaign outcomes based on their launch dates and funding goals.
 
 ## Analysis and Challenges
 
