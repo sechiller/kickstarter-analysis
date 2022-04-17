@@ -1,6 +1,3 @@
-# kickstarter-analysis
-module 1
-
 # Kickstarting with Excel
 
 ## Overview of Project
@@ -11,14 +8,29 @@ module 1
 ## Analysis and Challenges
 
 ### Analysis of Outcomes Based on Launch Date
-This analysis was fairly straightforward
+This analysis was fairly straightforward. A pivot table was created and then filtered by Parent Category and Years. Outcomes defined the columns and Created/Launch date defined the rows. The calculated values were to count of the outcomes.
+
+![image](https://user-images.githubusercontent.com/103475613/163698391-b9121ef6-ed08-49d1-915b-81b51d701f4b.png)
+
+The next steps were to filter on the relevant Parent Category (theater), filter out live outcomes, and group the launch dates by Month. This leaves us with the below  pivot table which was used to generate the graph that visualizes the outcomes.
+
+ ![image](https://user-images.githubusercontent.com/103475613/163698353-b7ec6b04-eca2-47ce-a6c5-15fdb0bec27a.png)
 
 ### Analysis of Outcomes Based on Goals
+The first step of this analysis was to create the ranges. To do this, two new columns were added (pictured below). The concatenate function to create the goal categories.
+
+![image](https://user-images.githubusercontent.com/103475613/163698569-780f8ea6-e2fc-468d-ab6f-eb6ef012aadc.png)
+
+The next step was to create a series of countif statements (i.e. =COUNTIFS(Kickstarter!$F:$F,D$1,Kickstarter!$D:$D,">="&$B3,Kickstarter!$D:$D,"<="&$C3,Kickstarter!$R:$R,"plays"). The new range columns and a new row (pictured below) were used to make it possible to lookup up the less than value, the greater than value, and the outcome so those did not have to be typed. The condition of the subcategory being "plays" was typed as that did not change accross the ranges or outcomes - but it easily could be programmed in the same way. 
+
+![image](https://user-images.githubusercontent.com/103475613/163698586-f8adc3ae-c43b-4d83-b122-6e746075bfbf.png)
+
+After the count was completed, it was simple to sum the number of projects by range and set up a simple calculation to determine the percentage successful (#successful / total projects) and percentage failed (#failed / total projects). All that remained to do was create and format a simple line graph to display these percentages and how they related to the goal amount. 
 
 ### Challenges and Difficulties Encountered
   For the analysis of Outcomes Based on Launch Date, the primary challenge was in regards to formatting. It was important that the launch date was formatted properly so it displayed properly in the pivot table and corresponding graph. This analysis was focused on the launch month, so it was important, and challenging, to set the pivot table up with that in mind. It was also important to filter out results that were not associated with the Parent Category of "Theater" and those that were currently live.
 
-  For the analysis of Out
+  For the analysis of Outcome Based on Goals, the primary challenge was in the number of ranges that were to be compared. It was important to set up the analysis in a way that was not highly manual and used formulas as much as possible - instead of typing out the values associated with the ranges. There were also several elements in the countifs statements so it was important to check the results to make sure they were reasonable. I did this by doing some quick totals and comparing them to quic totals done using filters and the raw data.
 
 ## Results
 
@@ -31,6 +43,8 @@ This analysis was fairly straightforward
      Most of the time, a smaller goal leads to a higher chance of a successful outcome. The excseption is the 9 plays that have a budget between $35,000 and $44,999 which show a much higher rate of success. This might warrant further investigation. You can also conclude that the majorities of plays had a goal of $1,000 to $4,999 with 85% of plays having goals of less than $10,000. 
 
 - What are some limitations of this dataset?
+
+     There is a wide array of data (countries, dates, budgets, categories) in this dataset. It may be valuable to find and focus on a dataset that is more focused on plays and theater. There may also be additional data points that are relevant to plays and theater, like ticket sales, marketing, or attendance, that would be valuable to explore but are not included in this dataset.
 
 - What are some other possible tables and/or graphs that we could create?
 
